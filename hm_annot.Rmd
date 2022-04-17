@@ -1,0 +1,31 @@
+---
+title: "hm_annot"
+author: "Yao-Chung Chen"
+date: "4/19/2022"
+output: html_document
+---
+
+```{r}
+BiocManager::install("org.Hs.eg.db")
+install.packages('ggplot2')
+```
+
+```{r}
+library(org.Hs.eg.db)
+library(ggplot2)
+```
+
+```{r}
+#map Ensembl gene accession numbers with Entrez Gene identifiers
+x <- org.Hs.egENSEMBL
+mapped_genes <- mappedkeys(x)
+xx <- as.list(x[mapped_genes])
+```
+
+```{r}
+df <- diamonds
+ggplot(df, aes(depth, price)) +
+    geom_point()
+```
+
+
