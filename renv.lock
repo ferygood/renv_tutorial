@@ -1,6 +1,6 @@
 {
   "R": {
-    "Version": "4.1.1",
+    "Version": "4.1.3",
     "Repositories": [
       {
         "Name": "CRAN",
@@ -735,6 +735,23 @@
       "Repository": "CRAN",
       "Hash": "b227d13e29222b4574486cfcbde077fa",
       "Requirements": []
+    },
+    "taylor": {
+      "Package": "taylor",
+      "Version": "1.0.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "0ef38de999bf46b7cbe77cdd7b78e911",
+      "Requirements": [
+        "crayon",
+        "ggplot2",
+        "glue",
+        "lifecycle",
+        "rlang",
+        "scales",
+        "tibble",
+        "vctrs"
+      ]
     },
     "tibble": {
       "Package": "tibble",

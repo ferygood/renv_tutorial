@@ -13,6 +13,7 @@ install.packages('ggplot2')
 ```{r}
 library(org.Hs.eg.db)
 library(ggplot2)
+library(taylor)
 ```
 
 ```{r}
@@ -26,6 +27,10 @@ xx <- as.list(x[mapped_genes])
 df <- diamonds
 ggplot(df, aes(depth, price)) +
     geom_point()
+```
+```{r}
+studio_albums <- subset(taylor_albums, !ep)
+ggplot(studio_albums, aes(x = metacritic_score, y = album_name)) + geom_col()
 ```
 
 
